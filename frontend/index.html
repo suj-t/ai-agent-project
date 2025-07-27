@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Agent Chat</title>
+    <meta name="description" content="Simple AI Chat Interface" />
+    <meta name="author" content="Lovable" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <meta property="og:title" content="AI Agent Chat" />
+    <meta property="og:description" content="Simple AI Chat Interface" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                <h2>🤖 AI Agent</h2>
+                <span id="status-badge">Model: Together</span>
+            </div>
+
+            <div class="chat-box" id="chat-box">
+                <div class="welcome-message">
+                    <h3>Welcome to AI Chat</h3>
+                    <p>Start a conversation by typing a message below.</p>
+                </div>
+            </div>
+            <div id="typing-indicator" class="typing hidden">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="input-section">
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Type your message..." />
+                    <button id="send-button" onclick="sendMessage()">Send</button>
+                </div>
+
+                <div class="controls-row">
+                    <button id="toggle-history" onclick="toggleHistory()" class="history-button">Hide History</button>
+                    <select id="llm-choice">
+                        <option value="together">Together</option>
+                        <option value="gemini">Gemini</option>
+                    </select>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="floating-tips">
+        <div class="tip">💡 Select <strong>"Together"</strong> for faster replies, or <strong>“Gemini”</strong> for
+            detailed responses.</div>
+        <div class="tip">🛑<strong>"Together"</strong> is not for story or conversation use <strong>“Gemini”</strong> for
+            that.</div>
+        <div class="tip">💬 Click “Send” or press <strong>Enter</strong> to ask your question.</div>
+        <div class="tip">📜 Toggle “Show History” to view past chats.</div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
