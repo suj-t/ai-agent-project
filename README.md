@@ -2,11 +2,7 @@
 
 This guide helps you clone, configure, and run the AI Agent Project on your machine without Docker, using Python, FastAPI, and Chromadb. This includes frontend setup and running all microservices.
 
-sortcut
-conse repo 
-download requirements 
-run batch file 
-done 
+sortcut    --->   conse repo    --->   download requirements    --->   run batch file    --->   done 
     -sujal
 if its not working see below 
 
