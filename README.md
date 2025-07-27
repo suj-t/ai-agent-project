@@ -1,18 +1,6 @@
 🧠 AI Agent Project – Complete Setup Guide
 
 This guide helps you clone, configure, and run the AI Agent Project on your machine without Docker, using Python, FastAPI, and Chromadb. This includes frontend setup and running all microservices.
-🗂️ Project Structure Overview
-
-ai-agent-project/
-├── frontend/               # Angular/HTML frontend for user interaction
-├── chat_service/          # Orchestrator microservice
-├── knowledge_base_service/ # Knowledge ingestion and search microservice
-├── search_service/        # DuckDuckGo-based web search fallback
-├── history_service/       # MongoDB-based chat history storage
-├── .env                   # Environment variables (API keys, DB URIs)
-├── requirements.txt       # All required Python libraries
-├── run_all.bat            # Windows batch file to run all services + frontend
-├── README.md              # Setup instructions (this guide)
 
 🧰 Prerequisites
 Tool	Purpose
@@ -21,20 +9,19 @@ Git	Clone the repository
 Node.js + npm	(Optional) For Angular frontend (if applicable)
 MongoDB	Required for storing history data (local or Atlas)
 Internet Access	For LLM API access (TogetherAI, Gemini)
+
 🐍 Python Setup
 
     Install Python 3.10+
     Download Python and install with Add to PATH enabled.
-
     Install pip and virtualenv (optional but recommended)
 
 pip install virtualenv
 
 Clone the Repository
-
 git clone https://github.com/suj-t/ai-agent-project.git
-cd ai-agent-project
 
+cd ai-agent-project
 Create Virtual Environment
 
 python -m venv venv
