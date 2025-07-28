@@ -1,4 +1,7 @@
-🧠 AI Agent Project – Complete Setup Guide
+🧠 AI Agent Project 
+AI Agent Project is a modular and lightweight multi-service AI assistant that intelligently handles user queries using a three-layered approach: 1) Knowledge Base Search using ChromaDB and embeddings for fast semantic search of local documents, 2) Web Search using DuckDuckGo scraping as a fallback for real-time information, and 3) LLM Response Generation via TogetherAI and Gemini APIs for natural language answers. It features a clean frontend interface, stores chat history in MongoDB, and allows switching between LLMs—making it ideal for both learning and practical AI integration without relying on heavy frameworks or Docker.
+
+– Complete Setup Guide
 
 This guide helps you clone, configure, and run the AI Agent Project on your machine without Docker, using Python, FastAPI, and Chromadb. This includes frontend setup and running all microservices.
 
