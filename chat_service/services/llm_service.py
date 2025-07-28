@@ -7,8 +7,10 @@ import re
 load_dotenv()
 
 # Get the Together.ai API key from environment variables
-TOGETHER_API_KEY = "3e7856586265ddeed0822161bba4d58483dfbfa1f6e6de27403ff4b29af15efd"
-GEMINI_API_KEY = "AIzaSyDcs8kAFelH4uD5yx8TwIKwJpnhCqAB5pQ"
+TOGETHER_API_KEY = "put your together api key"
+#how to get together api key visit https://api.together.xyz/
+GEMINI_API_KEY = "put gemini key here"
+
 
 
 def query_together(prompt: str) -> str:
